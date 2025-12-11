@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // 入力された index.html に画面を切り替え
-    window.location.href = url;
+    // 別タブ（新しい画面）で開く
+    // 発表レイアウトの画面はそのまま残る
+    window.open(url, "_blank");
   });
 });
